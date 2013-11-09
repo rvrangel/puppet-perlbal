@@ -1,0 +1,12 @@
+CREATE POOL <%= name %>_pool
+  SET nodefile = /etc/perlbal/pools.d/<%= name %>.dat
+
+CREATE SERVICE <%= name %>
+  SET listen = <%= listen %>
+  SET role = reverse_proxy
+  SET pool = <%= name %>_pool
+  SET persist_client  = <%= persist_client %>
+  SET persist_backend = <%= persist_backend %>
+  SET verify_backend  = <%= verify_backend %>
+  SET idle_timeout = <%= idle_timeout %>
+<% if enable %>ENABLE <%= name %><% end %>

@@ -1,0 +1,14 @@
+SERVER pidfile = /var/run/perlbal.pid
+
+load include
+
+<% @mimetypes.each do |mime| -%>
+mime set <%= mime %>
+<% end -%>
+
+CREATE SERVICE mgmt
+  SET role   = management
+  SET listen = <%= management_host %>:<%= management_port %>
+ENABLE mgmt
+
+INCLUDE = /etc/perlbal/services.d/*.conf
