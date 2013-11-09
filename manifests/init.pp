@@ -27,6 +27,7 @@ class perlbal (
 	file {'/etc/perlbal/perlbal.conf':
 		ensure => present,
 		content => template('perlbal/perlbal.conf.erb'),
+		require => Package['perlbal'],
 		notify => Service['perlbal'],
 	}
 
