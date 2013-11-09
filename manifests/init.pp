@@ -38,6 +38,7 @@ class perlbal (
 			"set USER $user",
 		],
 		notify => Service['perlbal'],
+		require => Package['perlbal'],
        	}
 	
 	service {'perlbal':
