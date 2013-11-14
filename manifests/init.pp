@@ -7,7 +7,7 @@ class perlbal (
 		Debian => "perlbal",
 		RedHat => "Perlbal",
 	},	
-	$mimetypes = undef,
+	$mimetypes = [],
 ) {
 	package {'perlbal': 
 		name => $package,
