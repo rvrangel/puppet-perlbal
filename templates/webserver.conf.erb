@@ -1,0 +1,14 @@
+CREATE SERVICE <%= name %>
+  SET listen = <%= listen %>
+  SET role = web_server
+  SET dirindexing = <%= dirindexing %>
+  SET docroot = <%= docroot %>
+  SET enable_concatenate_get = <%= enable_concatenate_get %>
+  SET enable_md5 = <%= enable_md5 %>
+  SET enable_delete = <%= enable_delete %>
+  SET enable_put = <%= enable_put %>
+  SET index_files = <%= index_files %>
+  SET max_put_size = <%= max_put_size %>
+  SET min_put_directory = <%= min_put_directory %>
+  SET server_tokens = <%= server_tokens %>
+<% if enable %>ENABLE <%= name %><% end %>

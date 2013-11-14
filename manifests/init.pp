@@ -1,6 +1,6 @@
 class perlbal (
 	$enable = true,
-	$user = 'www-data',
+	$user = 'root',
 	$management_port = 16000,
 	$management_host = '127.0.0.1',
 	$package = $::osfamily ? {
