@@ -5,7 +5,7 @@ $backend_servers = [
 
 # using different port for management service
 class {'perlbal':
-	management_port = 50000,
+	management_port => 50000,
 }
 
 # create a reverse proxy
