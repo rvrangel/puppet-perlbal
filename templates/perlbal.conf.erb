@@ -6,9 +6,11 @@ load include
 mime set <%= mime %>
 <% end -%>
 
+INCLUDE = /etc/perlbal/services.d/*.conf
+
 CREATE SERVICE mgmt
   SET role   = management
   SET listen = <%= management_host %>:<%= management_port %>
 ENABLE mgmt
 
-INCLUDE = /etc/perlbal/services.d/*.conf
+
