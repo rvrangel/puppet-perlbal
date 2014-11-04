@@ -1,0 +1,18 @@
+{
+  "name": "rvrangel-perlbal",
+  "version": "0.0.1",
+  "author": "Renan Rangel",
+  "license": "GPLv2",
+  "summary": "A module for managing perlbal",
+  "source": "https://github.com/rvrangel/puppet-perlbal",
+  "project_page": "https://github.com/rvrangel/puppet-perlbal",
+  "issues_url": "https://github.com/rvrangel/puppet-perlbal/issues",
+  "tags": ["proxy"],
+  "operatingsystem_support": [
+    {
+    "operatingsystem": "Debian",
+    "operatingsystemrelease": [ "7" ]
+    }
+   ]
+  "dependencies": []
+}

@@ -1,3 +1,8 @@
+# == Class: perlbal
+#
+# Perlbal main configuration and management interface
+#
+
 class perlbal (
 	$enable = true,
 	$user = 'root',
