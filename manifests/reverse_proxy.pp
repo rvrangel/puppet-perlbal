@@ -5,6 +5,8 @@ define perlbal::reverse_proxy (
 	$persist_backend = true,
 	$verify_backend = true,
 	$idle_timeout = 30,
+	$backend_persist_cache = 2,
+	$connect_ahead = 2,
 	$persist_client_idle_timeout = 30,
 	$nodes,
 ) {

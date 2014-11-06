@@ -9,5 +9,7 @@ CREATE SERVICE <%= name %>
   SET persist_backend = <%= persist_backend %>
   SET verify_backend  = <%= verify_backend %>
   SET idle_timeout = <%= idle_timeout %>
+  SET backend_persist_cache = <%= backend_persist_cache %>
+  SET connect_ahead = <%= connect_ahead %>
   SET persist_client_idle_timeout = <%= persist_client_idle_timeout %>
 <% if enable %>ENABLE <%= name %><% end %>
