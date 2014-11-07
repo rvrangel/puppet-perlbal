@@ -20,7 +20,7 @@
     {
     "operatingsystem": "CentOS",
     "operatingsystemrelease": [ "6.5" ]
-    },
+    }
    ],
   "dependencies": []
 }
