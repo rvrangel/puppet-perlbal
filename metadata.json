@@ -1,6 +1,6 @@
 {
   "name": "rvrangel-perlbal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Renan Rangel",
   "license": "GPLv2",
   "summary": "A module for managing perlbal",
@@ -12,7 +12,15 @@
     {
     "operatingsystem": "Debian",
     "operatingsystemrelease": [ "7" ]
-    }
+    },
+    {
+    "operatingsystem": "Ubuntu",
+    "operatingsystemrelease": [ "14.04" ]
+    },
+    {
+    "operatingsystem": "CentOS",
+    "operatingsystemrelease": [ "6.5" ]
+    },
    ],
   "dependencies": []
 }
