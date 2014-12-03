@@ -1,6 +1,6 @@
 {
   "name": "rvrangel-perlbal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Renan Rangel",
   "license": "GPLv2",
   "summary": "A module for managing perlbal",
