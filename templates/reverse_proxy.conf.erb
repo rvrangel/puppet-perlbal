@@ -12,4 +12,6 @@ CREATE SERVICE <%= name %>
   SET backend_persist_cache = <%= backend_persist_cache %>
   SET connect_ahead = <%= connect_ahead %>
   SET persist_client_idle_timeout = <%= persist_client_idle_timeout %>
+  SET buffer_size = <%= buffer_size %>
+  SET buffer_backend_connect = <%= buffer_backend_connect %>
 <% if enable %>ENABLE <%= name %><% end %>

@@ -8,6 +8,8 @@ define perlbal::reverse_proxy (
 	$backend_persist_cache = 2,
 	$connect_ahead = 2,
 	$persist_client_idle_timeout = 30,
+	$buffer_size = '256k',
+	$buffer_backend_connect = '100k',
 	$nodes,
 ) {
 	
